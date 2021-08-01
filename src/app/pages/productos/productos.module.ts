@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductosComponent } from './productos.component';
 import { RoutingProductosPageModule } from './productos-rounting.module';
+import { ComponentsModule } from '../../components/components.module';
 
 
 
@@ -11,6 +12,7 @@ import { RoutingProductosPageModule } from './productos-rounting.module';
   ],
   imports: [
     RoutingProductosPageModule,
+    ComponentsModule,
     CommonModule
   ]
 })

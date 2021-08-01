@@ -1,0 +1,20 @@
+.emotional-phrase{
+    background-color: white;
+    color: #666666;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    width: 95%;
+    border-radius: 20px;
+    margin: 20px auto !important;
+    .image{
+        width: 40px;
+        img{
+            width: 100%;
+        }
+    }
+    .writer{
+        font-size: 0.8rem;
+    }
+}

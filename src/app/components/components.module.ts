@@ -2,21 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { HeaderComponent } from './header/header.component';
-import { RouterModule } from '@angular/router';
+import { PhrasesEmotionalComponent } from './phrases-emotional/phrases-emotional.component';
 
 
 
 @NgModule({
   declarations: [
     SidemenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    PhrasesEmotionalComponent
   ],
   imports: [
     CommonModule,
   ],
   exports: [
     SidemenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    PhrasesEmotionalComponent
   ]
 })
 export class ComponentsModule { }
