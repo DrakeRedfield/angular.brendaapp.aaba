@@ -13,6 +13,10 @@ export class NavbarService {
     this.opened = !this.opened;
   }
 
+  closeNavbar(){
+    this.opened = false;
+  }
+
   // get openedNav(): boolean{
   //   return this.opened;
   // }

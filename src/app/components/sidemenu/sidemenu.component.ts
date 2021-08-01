@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavbarService } from '../../services/navbar/navbar.service';
 
 @Component({
   selector: 'app-sidemenu',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidemenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private navbar: NavbarService,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  closeSesion(){
+    this.router.navigateByUrl('/',{replaceUrl: true});
+    this.navbar.closeNavbar();
   }
 
 }

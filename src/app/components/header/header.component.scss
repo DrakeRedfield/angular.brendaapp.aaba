@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 200;
     .img-content{
         width: 35px;
         height: 35px;
@@ -21,4 +23,9 @@
         width: 25px;
         height: 25px;
     }
+    margin-bottom: 100%;
+}
+.spacer{
+    height: 55px;
+    width: 100%;
 }
