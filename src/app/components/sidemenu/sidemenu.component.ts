@@ -17,9 +17,21 @@ export class SidemenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  closeSesion(){
-    this.router.navigateByUrl('/',{replaceUrl: true});
+  navigateTo(url: string, replaceUrl = false){
+    this.router.navigateByUrl(url,{replaceUrl});
     this.navbar.closeNavbar();
+  }
+
+  closeSesion(){
+    this.navigateTo('/', true);
+  }
+
+  goInicio(){
+    this.navigateTo('/home');
+  }
+
+  goProductos(){
+    this.navigateTo('/productos');
   }
 
 }
