@@ -1,5 +1,28 @@
 <app-header></app-header>
 <app-phrases-emotional></app-phrases-emotional>
 <div class="main-content">
-    
+    <mat-card class="topic-section">
+        <mat-card-content>
+            <div class="topic-content">
+                <div>
+                    <h4>
+                        <strong>Productos</strong>
+                    </h4>
+                </div>
+                <div class="search-content">
+                    <label for="search-input" class="search-icon">
+                        <img src="/assets/icons/loupe.svg" alt="Icono Buscar Productos">
+                    </label>
+                    <input type="text" 
+                            (input)="keyPress()"
+                            [(ngModel)]="textSearch"
+                            name="search-input"
+                            placeholder="Buscar producto"
+                            id="search-input"
+                            class="text-search">
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <app-list-productos [dataProducts]="activeProducts"></app-list-productos>
 </div>

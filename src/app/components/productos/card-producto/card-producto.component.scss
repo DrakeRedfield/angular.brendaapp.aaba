@@ -1,0 +1,46 @@
+.card-product{
+    width: 100% !important;
+    margin: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    background-color: #FFE2E5 !important;
+    cursor: pointer;
+    .mat-card-content{
+        text-align: left;
+        strong{
+            color: black;
+        }
+        .title, .content-add-product strong{
+            font-size: 1.1rem;
+        }
+        .money-section{
+            color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            min-width: 49%;
+            padding: 10px 0;
+            strong{
+                font-weight: 900;
+            }
+        }
+    }
+    .se-details{
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+    }
+}
+.no-pad-bottom{
+    padding-bottom: 0;
+}
+.text-center{
+    text-align: center;
+}
+.add-product-img{
+    width: 17.5%;
+    min-width: 30px;
+    margin: 10px 0;
+}
+.bg-white{
+    background-color: white !important;
+}

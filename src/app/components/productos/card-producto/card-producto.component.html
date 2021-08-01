@@ -1,0 +1,23 @@
+<mat-card class="card-product no-pad-bottom" *ngIf="!isNewCard">
+    <mat-card-content>
+        <strong class="title">{{data.nombre}}</strong>
+        <br>
+        <div class="money-section">
+            <span><strong>Total:</strong> {{data.precioOriginal | currency}}</span>
+            <span><strong>Ganancia:</strong> {{data.precioVenta | currency}}</span>
+            <span><strong>Disponibles:</strong> {{data.disponible}}</span>
+        </div>
+    </mat-card-content>
+    <button class="se-details">VER DETALLES</button>
+</mat-card>
+
+<!-- New Product Card -->
+<mat-card class="card-product bg-white" *ngIf="isNewCard">
+    <mat-card-content class="text-center">
+        <div class="content-add-product">
+            <img src="/assets/icons/plus.svg" alt="Imagen Agregar Producto" class="add-product-img">
+            <br>
+            <strong>Agregar Producto</strong>
+        </div>
+    </mat-card-content>
+</mat-card>

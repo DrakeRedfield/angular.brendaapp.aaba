@@ -1,0 +1,4 @@
+<div class="list-products row align-items-center">
+    <app-card-producto [isNewCard]="true" class="col-lg-3 col-md-4 col-6"></app-card-producto>
+    <app-card-producto *ngFor="let producto of dataProducts;" class="col-lg-3 col-md-4 col-6" [data]="producto" [isNewCard]="false"></app-card-producto>
+</div>
