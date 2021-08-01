@@ -1,2 +1,42 @@
 <app-header></app-header>
-<p>home works!</p>
+<div class="emotional-phrase">
+    <div class="phrase-content">
+        <strong>If you can dream it, you can do it.</strong>
+        <br>
+        Walt Disney
+    </div>
+    <div class="image">
+        <img src="/assets/icons/calm.svg" alt="Imagen Frase Emocional">
+    </div>
+</div>
+<div class="main-content">
+    <mat-card>
+        <mat-card-subtitle>
+            <strong>Productos por agotar</strong>
+        </mat-card-subtitle>
+        <mat-card-content>
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                      <th scope="col">Producto</th>
+                      <th scope="col">Restante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of [].constructor(5);">
+                        <th scope="row">Masajeador Facil: Kitty and Bob</th>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <mat-card-subtitle>
+            <strong>Ventas de los últimos 6 meses</strong>
+        </mat-card-subtitle>
+        <mat-card-content>
+            <canvas #chartElm width="400" height="150"></canvas>
+        </mat-card-content>
+    </mat-card>
+</div>

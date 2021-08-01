@@ -1,0 +1,24 @@
+.header-content{
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #43B0FF 57.58%, #38FFDB 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img-content{
+        width: 35px;
+        height: 35px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .img-logo{
+        border-radius: 100%;
+        background-color: white;
+    }
+    .img-menu{
+        width: 25px;
+        height: 25px;
+    }
+}

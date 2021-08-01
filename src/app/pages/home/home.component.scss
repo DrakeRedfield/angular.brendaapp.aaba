@@ -1,0 +1,29 @@
+.emotional-phrase{
+    background-color: white;
+    color: #666666;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    .image{
+        width: 40px;
+        img{
+            width: 100%;
+        }
+    }
+}
+mat-card{
+    width: 95%;
+    margin: 20px auto;
+    background: white;
+    box-shadow: none !important;
+    border-radius: 20px;
+    mat-card-subtitle{
+        color: black;
+    }
+}
+table{
+    tr{
+        text-align: center;
+    }
+}

@@ -3,15 +3,18 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomePageRoutingModule } from './home-routing.module';
 import { ComponentsModule } from 'src/app/components/components.module';
-
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [
+    HomeComponent
+  ],
   imports: [
-    HomePageRoutingModule,
     ComponentsModule,
-    CommonModule
+    MatCardModule,
+    CommonModule,
+    HomePageRoutingModule,
   ]
 })
 export class HomeModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavbarService } from './services/navbar/navbar.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'webApp';
+  openedNavbar = true;
+
+  constructor(
+    public navbar: NavbarService
+  ){}
+
+  openCloseNavbar(){
+    this.navbar.openCloseNavbar();
+  }
 }
