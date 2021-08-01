@@ -10,33 +10,39 @@
     </div>
 </div>
 <div class="main-content">
-    <mat-card>
-        <mat-card-subtitle>
-            <strong>Productos por agotar</strong>
-        </mat-card-subtitle>
-        <mat-card-content>
-            <table class="table table-hover table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                      <th scope="col">Producto</th>
-                      <th scope="col">Restante</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let item of [].constructor(5);">
-                        <th scope="row">Masajeador Facil: Kitty and Bob</th>
-                        <td>5</td>
-                    </tr>
-                </tbody>
-            </table>
-        </mat-card-content>
-    </mat-card>
-    <mat-card>
-        <mat-card-subtitle>
-            <strong>Ventas de los últimos 6 meses</strong>
-        </mat-card-subtitle>
-        <mat-card-content>
-            <canvas #chartElm width="400" height="150"></canvas>
-        </mat-card-content>
-    </mat-card>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <mat-card>
+                <mat-card-subtitle>
+                    <strong>Productos por agotar</strong>
+                </mat-card-subtitle>
+                <mat-card-content>
+                    <table class="table table-hover table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Restante</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of [].constructor(5);">
+                                <th scope="row">Masajeador Facil: Kitty and Bob</th>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-12 col-md-6">
+            <mat-card>
+                <mat-card-subtitle>
+                    <strong>Ventas de los últimos 6 meses</strong>
+                </mat-card-subtitle>
+                <mat-card-content>
+                    <canvas #chartElm width="200" height="150"></canvas>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
 </div>
