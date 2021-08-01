@@ -1,0 +1,79 @@
+.bg-body{
+    background: linear-gradient(63.18deg, #43B0FF 0%, #38FFDB 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    padding: 20px 0;
+}
+//Card Style
+.card{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    width: 30%;
+    margin: auto;
+    padding: 10px 20px;
+}
+.img-card{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 100%;
+    margin: 20px auto;
+    background-color: white;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+//Form Style
+.form-content{
+    width: 100%;
+    .input-content, .submit-btn{
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 0;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+        input{
+            width: 100%;
+            border: 0;
+        }
+    }
+    .submit-btn{
+        text-align: center;
+        font-weight: bold;
+        display: block;
+    }
+}
+//Text Forgot Pass
+.recover-pass-text{
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+    a{
+        color: #676767;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+}
+
+//Media Query
+@media (max-width: 1000px) {
+    .card{
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .card{
+        width: 90%;
+    }
+}

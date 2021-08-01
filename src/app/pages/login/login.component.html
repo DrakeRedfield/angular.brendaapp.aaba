@@ -1,0 +1,34 @@
+<section class="bg-body">
+    <div class="card">
+        <div class="img-card">
+            <img src="/assets/icons/plant-based.svg" alt="Logo del Sitio">
+        </div>
+        <div class="form-content">
+            <form (ngSubmit)="onSubmit(formLogin)" #formLogin="ngForm">
+                <div class="input-content">
+                    <img src="/assets/icons/user.svg" alt="Sección del email">
+                    <input type="text"
+                           placeholder="Ingresa tu email aquí..."
+                           name="email"
+                           required
+                           ngModel>
+                </div>
+                <div class="input-content">
+                    <img src="/assets/icons/padlock.svg" alt="Sección del email">
+                    <input type="text"
+                           placeholder="Ingresa tu password aquí..."
+                           name="password"
+                           required
+                           ngModel>
+                </div>
+                <div class="recover-pass-text">
+                    <a href="#">
+                        ¿Haz olvidado tu contraseña?<br>
+                        <strong>Haz click aquí.</strong>
+                    </a>
+                </div>
+                <button class="submit-btn" [disabled]="formLogin.invalid" type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+</section>
