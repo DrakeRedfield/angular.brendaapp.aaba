@@ -1,7 +1,7 @@
 .emotional-phrase{
     background-color: white;
     color: #666666;
-    padding: 10px 15px;
+    padding: 20px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center ;
@@ -10,6 +10,9 @@
         img{
             width: 100%;
         }
+    }
+    .writer{
+        font-size: 0.8rem;
     }
 }
 mat-card{
